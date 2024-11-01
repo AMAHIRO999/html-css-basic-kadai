@@ -1,0 +1,34 @@
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px; /* ルート要素の2倍 */
+  letter-spacing: 0.6em; /* 文字の大きさの1.2倍 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 影の設定 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下線の設定 */
+}
+
+.blue {
+  color: skyblue; /* スカイブルー */
+}
+
+.pink {
+  color: rgb(255, 192, 203); /* ピンク */
+}
+
+#basic h2 {
+  color: rgb(255, 192, 203); /* ピンク */
+}
+
+#basic h2:nth-of-type(2), /* 生年月日 */
+#basic h2:nth-of-type(3) { /* 血液型 */
+  color: skyblue; /* スカイブルー */
+}
+
+p {
+  text-align: center;
+}

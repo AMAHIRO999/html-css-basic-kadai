@@ -1,0 +1,98 @@
+/* Step 3: Reset margins */
+h1, p, body {
+  margin: 0;
+}
+
+/* Set font size for all p and a elements */
+p, a {
+  font-size: 20px;
+}
+
+/* Step 4: Header styles */
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* Step 5: Main styles */
+main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-between; /* Use space-between for equal spacing */
+}
+
+.contents {
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center; /* Center contents */
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: rgb(236, 122, 122);
+}
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+/* Step 6: Specific styles for the second p element's first letter */
+.contents p:nth-of-type(2) {
+  position: relative;
+}
+
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+/* Image styles */
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+
+/* Step 6: Footer styles */
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+}
+
+/* Step 7: Responsive styles */
+@media (max-width: 768px) {
+  h2 {
+      font-size: 30px;
+  }
+
+  p {
+      font-size: 25px;
+  }
+
+  #parent {
+      flex-direction: column; /* Stack contents vertically */
+  }
+}
